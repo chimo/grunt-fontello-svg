@@ -1,6 +1,6 @@
 {
   "name": "grunt-fontello-svg",
-  "description": "Generate the SVG versions of a Fontello icon set.",
+  "description": "Grunt task to generate the SVG versions of a Fontello icon set.",
   "version": "0.1.0",
   "homepage": "https://github.com/chimo/grunt-fontello-svg",
   "author": {
@@ -40,6 +40,8 @@
     "grunt": "~0.4.5"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin",
+    "fontello",
+    "svg"
   ]
 }
