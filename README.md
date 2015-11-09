@@ -22,19 +22,43 @@ grunt.loadNpmTasks('grunt-fontello-svg');
 ### Overview
 In your project's Gruntfile, add a section named `fontello_svg` to the data object passed into `grunt.initConfig()`.
 
+### Usage example
+
 ```js
 grunt.initConfig({
-  fontello_svg: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+    fontello_svg: {
+        options: {
+            css: false,
+            skip: true,
+            verbose: true
+        },
+        all: {
+            config: "fontello-config.json",
+            dest: "out/"
+        }
+    }
 });
 ```
 
 ### Options
 
-TODO
+#### css
+
+* Type: `Boolean`
+* Default: `true`
+
+Create a corresponding CSS file
+
+#### skip
+
+* Type: `Boolean`
+* Default: `false`
+
+Skip existing files
+
+#### verbose
+
+* Type: `Boolean`
+* Default: `false`
+
+Verbose output
