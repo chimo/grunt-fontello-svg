@@ -27,9 +27,6 @@
   "scripts": {
     "test": "grunt test"
   },
-  "dependencies": {
-    "fontello-svg": "git+https://github.com/chimo/fontello-svg.git#grunt-test"
-  },
   "devDependencies": {
     "grunt-contrib-jshint": "^0.9.2",
     "grunt-contrib-clean": "^0.5.0",
@@ -43,5 +40,8 @@
     "gruntplugin",
     "fontello",
     "svg"
-  ]
+  ],
+  "dependencies": {
+    "fontello-svg": "0.5.0"
+  }
 }
