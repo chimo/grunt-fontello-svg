@@ -17,10 +17,15 @@ module.exports = function(grunt) {
             css: true,
             skip: false,
             verbose: false
-        });
+        }),
+        emitter;
 
-    fontello_svg.fontelloSvg(this.data.config, this.data.dest, options, function () {
+    emitter = fontello_svg.fontelloSvg(this.data.config, this.data.dest, options, function () {
         done();
+    });
+
+    emitter.on('svg-write', function(msg) {
+      grunt.log.writeln(msg);
     });
   });
 };
